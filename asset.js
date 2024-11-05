@@ -4,6 +4,6 @@ export const moneyAssets = [{id:10,name:"Disney",type:"stock",price:90,quantity:
 export function getAssetById(id){
     return moneyAssets.find(asset => asset.id === id);
 }
-console.log(getAssetById(10));
+
 
 

@@ -12,15 +12,15 @@ buyOrSell(){
     const asset = getAssetById(this.assetId)
     if(this.type==="sell"){
         if(asset.quantity>=this.quantity){
-            asset.quantity - this.quantity
+            asset.quantity -= this.quantity
         }
         else{
             console.log("You dont have that much to sell");
         }
     }
     else{
-        asset.quantity + this.quantity;
+        asset.quantity += this.quantity;
     }
-   
+   console.log(asset.quantity);
 }
 }
